@@ -17,6 +17,8 @@ high = len(people) - 1
 
 boat_count = 0
 
+
+# using while loop
 while low <= high:
     if low == high:
         boat_count += 1
@@ -25,5 +27,17 @@ while low <= high:
         low += 1
     high -= 1
     boat_count += 1
+
+
+# using for loop
+for i in range(low,high+1):
+    if low==high:
+        boat_count +=1
+        break
+    if people[low]+people[high]<=limit:
+        low +=1
+    high -=1
+    boat_count +=1
+
 
 print(boat_count)
