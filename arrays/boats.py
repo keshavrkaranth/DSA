@@ -39,5 +39,4 @@ for i in range(low,high+1):
     high -=1
     boat_count +=1
 
-
 print(boat_count)
